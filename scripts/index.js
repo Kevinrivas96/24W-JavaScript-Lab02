@@ -23,7 +23,7 @@ for (var i = 0; i < sliders.length; i++) {
         // Directly change the background-color of the page using the new CSS rgb value
         pageBg.style.backgroundColor = newCSS;
         // Display RGB values
-        rgbDisplay.textContent = newCSS;
+        rgbDisplay.innerHTML = `<b>${newCSS}</b>`;
         rgbDisplay.style.color = newCSS;
     };
 }
